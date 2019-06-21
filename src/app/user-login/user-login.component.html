@@ -1,0 +1,10 @@
+<div id="topRightLogin">
+    <mat-form-field>
+        <input matInput #userInput placeholder="Username">
+    </mat-form-field>
+    <mat-form-field>
+        <input type="password" matInput placeholder="Password" required>
+    </mat-form-field>
+</div><br>
+<button mat-raised-button (click)="signIn(userInput.value)">Sign in</button>
+<div *ngIf="condition">{{prompt}}</div>
